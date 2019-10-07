@@ -19,17 +19,8 @@
     }
   }
 
-  &__nav{
-
-    &-item{
-      color: $white;
-      font-size: 20px;
-      margin-left: 15px;
-      transition: .25s all ease;
-
-      &:hover{
-        color: $blue;
-      }
-    }
+  &__legal{
+    font-size: 2rem;
+    color: $white;
   }
 }

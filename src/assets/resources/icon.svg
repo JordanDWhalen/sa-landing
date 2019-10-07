@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="108px" height="108px" viewBox="0 0 108 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="108" height="108" rx="54"></rect>
+    </defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Copy" transform="translate(-509.000000, -657.000000)">
+            <g id="icon" transform="translate(509.000000, 657.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#3030F2" xlink:href="#path-1"></use>
+                <path d="M72.6456246,29.4188255 L77.1881008,41.7703499 L91,45.832536 L77.1881008,49.894722 L72.659,62.209 L77.1881008,74.5241035 L91,78.5862896 L77.1881008,82.6484757 L72.6456246,95 L68.1031485,82.6484757 L54.2912492,78.5862896 L68.1031485,74.5241035 L72.631,62.209 L68.1031485,49.894722 L54.2912492,45.832536 L68.1031485,41.7703499 L72.6456246,29.4188255 Z M36.3543754,13 L40.8968515,25.3515243 L54.7087508,29.4137104 L40.8968515,33.4758965 L36.368,45.79 L40.8968515,58.105278 L54.7087508,62.167464 L40.8968515,66.2296501 L36.3543754,78.5811745 L31.8118992,66.2296501 L18,62.167464 L31.8118992,58.105278 L36.34,45.79 L31.8118992,33.4758965 L18,29.4137104 L31.8118992,25.3515243 L36.3543754,13 Z" id="Combined-Shape-Copy" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

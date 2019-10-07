@@ -34,6 +34,16 @@
     line-height: 34px;
   }
 
+  &--short{
+    background-color: $blue-light;
+
+    .hero__container{
+      background-image: none;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+
   @include breakpoint( 900px ){
     margin-top: 12rem;
 
