@@ -3,12 +3,14 @@
   top: 0;
   left: 0;
   width: 100%;
+  background-color: $blue-light;
+  transition: all ease .3s;
 
   &__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0 2px;
+    padding: 2rem 0 1rem;
     border-bottom: 2px solid $white;
   }
 
@@ -18,7 +20,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
+    svg{
+      fill: $white;
+      display: block;
       margin-right: 1rem;
     }
   }
@@ -29,6 +33,14 @@
       color: $white;
       font-size: 20px;
       margin-left: 15px;
+    }
+  }
+
+  &--scrolled{
+    background-color: $navy;
+
+    .container{
+      border-bottom: none;
     }
   }
 }
