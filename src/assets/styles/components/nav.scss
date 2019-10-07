@@ -1,0 +1,130 @@
+.nav-global{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+
+  &__trigger{
+    width: 6rem;
+    height: 100vh;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    transition: .25s all ease;
+    cursor: pointer;
+
+    &-icon{
+      display: flex;
+      height: 2.4rem;
+      width: 3rem;
+      justify-content: space-between;
+      flex-direction: column;
+      overflow: hidden;
+
+      *{
+        transition: .25s all ease;
+        transform: translateX(0) translateY(0) rotate(0deg);
+      }
+
+      &-line{
+        width: 100%;
+        height: 2px;
+        display: flex;
+      }
+
+      &-left{
+        border-radius: 10px 0 0 10px;
+      }
+
+      &-right{
+        border-radius: 0 10px 10px 0;
+      }
+
+      &-left, &-right{
+        display: block;
+        background-color: $white;
+        width: 50%;
+        height: 100%;
+      }
+    }
+
+    &--active{
+      right: 40rem;
+
+      .nav-global__trigger-icon{
+
+        &-top{
+          .nav-global__trigger-icon-left{
+            transform: translateY(6.5px) translateX(3px) rotate(45deg);
+          }
+          .nav-global__trigger-icon-right{
+            transform: translateY(6.5px) translateX(-3px) rotate(-45deg);
+          }
+        }
+
+        &-mid{
+          .nav-global__trigger-icon-left{
+            transform: translateX(-15px);
+          }
+          .nav-global__trigger-icon-right{
+            transform: translateX(15px);
+          }
+        }
+
+        &-bot{
+          .nav-global__trigger-icon-left{
+            transform: translateY(-6.5px) translateX(3px) rotate(-45deg);
+          }
+          .nav-global__trigger-icon-right{
+            transform: translateY(-6.5px) translateX(-3px) rotate(45deg);
+          }
+        }
+
+      }
+    }
+
+    &:hover{
+      background-color: rgba(0,0,0,0.45);
+    }
+
+  }
+
+  &__item{
+    width: 100%;
+    padding: 12px 24px;
+    font-family: $heading;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    color: $white;
+    text-decoration: none;
+    transition: .25s all ease;
+
+    &:hover{
+      background: rgba(48, 48, 48, 0.65);
+      color: $green;
+    }
+  }
+
+  @include breakpoint( 900px ){
+
+    &__trigger{
+      height: 100%;
+      width: 6rem;
+      max-height: 6rem;
+      top: 0;
+      background-color: rgba(0,0,0,0);
+
+      &--active{
+        right: 0;
+      }
+    }
+
+  }
+
+}

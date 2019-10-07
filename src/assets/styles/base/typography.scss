@@ -1,0 +1,38 @@
+h3, .h3{
+  font-family: $heading;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+}
+
+
+.eyebrow{
+  font-family: $heading;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.5);
+  display: block;
+
+  &::before{
+    content: "";
+    display: block;
+    width: 28px;
+    height: 1px;
+    background-color: $black;
+    margin-bottom: 3rem;
+  }
+
+  &--white{
+    color: rgba(255, 255, 255, 0.5);
+
+    &::before{
+      background-color: $white;
+    }
+  }
+}

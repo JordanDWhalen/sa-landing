@@ -1,0 +1,80 @@
+.header-global{
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  top: 50px;
+  left: 0;
+
+  .nav-global{
+    width: 40rem;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    transform: translateX(40rem);
+    transition: .25s all ease;
+    background-color: rgba(0,0,0,0.4);
+    height: 100vh;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+
+  &--active{
+    .nav-global{
+      transform: translateX(0);
+    }
+  }
+
+  @include breakpoint( 900px ){
+    top: 0;
+    padding: 1.2rem;
+    background-color: rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    .nav-global{
+      height: calc(100vh - 62px);
+      top: 62px;
+      background-color: rgba(0,0,0,0.65);
+    }
+
+    &__container{
+      padding: 0;
+    }
+
+    &--active{
+      background-color: rgba(0,0,0,0.65);
+
+      .nav-global{
+        // right: 0;
+      }
+    }
+
+    &--active + .hero .hero__content{
+      opacity: .35;
+    }
+  }
+
+  @include breakpoint( 620px ){
+    height: 62px;
+
+    .nav-global{
+      width: 100%;
+      right: -100%;
+    }
+
+    .nav-global__item{
+      text-align: center;
+    }
+
+    &--active{
+
+      .nav-global{
+        right: 0;
+      }
+    }
+
+  }
+}

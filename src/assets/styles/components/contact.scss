@@ -1,0 +1,16 @@
+.contact{
+  margin-bottom: 40px;
+  display: block;
+  font-family: $body;
+
+  &__link{
+    font-weight: bold;
+    font-family: $heading;
+    color: $grey-mid;
+  }
+
+  &__address{
+    margin-bottom: 15px;
+  }
+
+}

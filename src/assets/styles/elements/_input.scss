@@ -1,0 +1,36 @@
+input[type="text"], input[type="email"], textarea{
+  background: rgba(255,255,255,0.0);
+  border: none;
+  border-bottom: 1px solid $white;
+  outline: none;
+  padding: 1.2rem 1.4rem;
+  color: $grey-mid;
+  transition: .25s all ease;
+  font-family: $body;
+  appearance: none;
+  border-radius: 0;
+
+  &::placeholder{
+    font-family: $body;
+    color: $green;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+
+  &:focus{
+    background: #EDEDED;
+  }
+}
+
+.input-plus{
+  display: flex;
+
+  &__button{
+    background: $green;
+    color: $white;
+    border: none;
+  }
+}

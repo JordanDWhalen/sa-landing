@@ -1,0 +1,9 @@
+a, .link {
+  color: $green;
+  text-decoration: underline;
+
+  &--white{
+    color: $white;
+    text-decoration: none;
+  }
+}

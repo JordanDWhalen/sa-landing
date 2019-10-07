@@ -1,0 +1,69 @@
+.newsletter{
+
+  .nf-form-cont{
+    width: 100%;
+  }
+
+  label, .nf-before-form-content, .nf-form-title{
+    display: none;
+  }
+
+  nf-fields-wrap{
+    display: flex;
+  }
+
+  nf-field:first-of-type{
+    width: 100%;
+    background-color: white;
+    input, .field-wrap{
+      width: 100%;
+    }
+  }
+
+  .nf-field-container, #ninja_forms_required_items{
+    margin: 0;
+  }
+
+  .submit-container, .email-container{
+    height: 100%;
+    display: block;
+    .nf-field, .submit-wrap, .nf-field-element{
+      height: 100%;
+      display: flex;
+    }
+
+    input{
+      appearance: none;
+      border-radius: 0;
+      -moz-appearance: none;
+      appearance: none;
+      -webkit-appearance: none;
+      border-bottom: 2px solid $grey-mid;
+
+      &:focus{
+        border-color: $green;
+      }
+    }
+  }
+
+
+  input[type="button"]{
+    background-color: $green;
+    font-family: $heading;
+    color: $white;
+    border: none;
+    height: 100%;
+    padding: 0 1rem;
+    font-weight: bold;
+  }
+
+  .nf-form-content{
+    padding-bottom: 3.2rem;
+  }
+
+  .nf-after-form-content, .nf-after-field{
+    position: absolute;
+    font-size: 1.1rem;
+  }
+
+}

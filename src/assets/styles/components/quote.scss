@@ -1,0 +1,104 @@
+.quote{
+  padding: 150px 0;
+  position: relative;
+
+  &__container{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+
+  &__wrapper{
+    max-width: 56rem;
+  }
+
+  &__title{
+    font-family: $heading;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: normal;
+    color: $grey-dark;
+    text-indent: -12px;
+  }
+
+  &__source{
+    font-family: $heading;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 11px;
+    letter-spacing: 0.01em;
+    margin-top: 24px;
+    color: $teal;
+    text-transform: capitalize;
+  }
+
+  &__person{
+    color: $green;
+  }
+
+  &--centered{
+    .quote__container{
+      justify-content: center;
+      text-align: center;
+    }
+    .quote__source{
+      color: #474747;
+
+      strong{
+        color: #3C8FA9
+      }
+    }
+  }
+
+  .wrapper{
+    position: relative;
+    z-index: 1;
+  }
+
+  &--light{
+    .quote__title{
+      color: $white;
+    }
+    .quote__source{
+      color: rgba(255,255,255,0.5);
+    }
+    .quote__person{
+      color: $green;
+    }
+  }
+
+  @include breakpoint( 600px ){
+
+    padding: 3.5rem 0;
+
+
+    &__background{
+      background-position: 33.333% center;
+    }
+
+    &__title{
+      font-size: 22px;
+    }
+
+    &__wrapper{
+      max-width: 20rem;
+    }
+
+    &__person{
+      display: block;
+    }
+  }
+}

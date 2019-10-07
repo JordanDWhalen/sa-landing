@@ -1,0 +1,190 @@
+@@include('../partials/header.html')
+
+@@include('../components/hero.html', { "image" : "blog-hero.png", "class" : "hero--fade" })
+
+<nav class="categories-nav">
+  <div class="container categories-nav__container">
+    <a href="#" class="categories-nav__item categories-nav__item--active">
+      Category 1
+    </a>
+    <a href="#" class="categories-nav__item">
+      Category 2
+    </a>
+    <a href="#" class="categories-nav__item">
+      Category 3
+    </a>
+    <a href="#" class="categories-nav__item">
+      Category 4
+    </a>
+    <a href="#" class="categories-nav__item">
+      Category 5
+    </a>
+    <a href="#" class="categories-nav__item">
+      Category 6
+    </a>
+  </div>
+</nav>
+
+<section class="blog">
+  <div class="container blog__container">
+    <div class="blog__list">
+      <article class="blog__item">
+        <div class="blog__item-img" style="background-image: url(assets/resources/blog-image.png)">
+          <div class="blog__item-meta">
+            <time class="blog__item-date">
+              <strong>FEB</strong>
+              18
+            </time>
+            <div class="author">
+              <div class="author__image" style="background-image: url(assets/resources/author-image.png)"></div>
+              <div class="author__info">
+                <h6 class="author__name">
+                  Author Name
+                </h6>
+                <p class="author__label">
+                  UX Designer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog__item-content">
+          <h5 class="blog__item-subtitle ">
+            category
+          </h5>
+          <h3 class="blog__item-title">
+            Article Headline
+          </h3>
+          <p class="blog__item-copy">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          </p>
+          <a href="#" class="button button--green button--solid">
+            <span class="button__label">
+              Read Article
+            </span>
+          </a>
+        </div>
+      </article>
+      <article class="blog__item">
+        <div class="blog__item-img" style="background-image: url(assets/resources/blog-image.png)">
+          <div class="blog__item-meta">
+            <time class="blog__item-date">
+              <strong>FEB</strong>
+              18
+            </time>
+            <div class="author">
+              <div class="author__image" style="background-image: url(assets/resources/author-image.png)"></div>
+              <div class="author__info">
+                <h6 class="author__name">
+                  Author Name
+                </h6>
+                <p class="author__label">
+                  UX Designer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog__item-content">
+          <h5 class="blog__item-subtitle ">
+            category
+          </h5>
+          <h3 class="blog__item-title">
+            Article Headline
+          </h3>
+          <p class="blog__item-copy">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          </p>
+          <a href="#" class="button button--green button--solid">
+            <span class="button__label">
+              Read Article
+            </span>
+          </a>
+        </div>
+      </article>
+      <article class="blog__item">
+        <div class="blog__item-img" style="background-image: url(assets/resources/blog-image.png)">
+          <div class="blog__item-meta">
+            <time class="blog__item-date">
+              <strong>FEB</strong>
+              18
+            </time>
+            <div class="author">
+              <div class="author__image" style="background-image: url(assets/resources/author-image.png)"></div>
+              <div class="author__info">
+                <h6 class="author__name">
+                  Author Name
+                </h6>
+                <p class="author__label">
+                  UX Designer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog__item-content">
+          <h5 class="blog__item-subtitle ">
+            category
+          </h5>
+          <h3 class="blog__item-title">
+            Article Headline
+          </h3>
+          <p class="blog__item-copy">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          </p>
+          <a href="#" class="button button--green button--solid">
+            <span class="button__label">
+              Read Article
+            </span>
+          </a>
+        </div>
+      </article>
+    </div>
+    <div class="blog__nav">
+      <form class="blog__search">
+        <input type="text" class="blog__search-input" placeholder="Search">
+        <button class="blog__search-button">
+          <img src="assets/resources/search-icon.svg" alt="">
+        </button>
+      </form>
+      <div class="blog__nav-group blog__archive">
+          <h6 class="blog__nav-label">
+            Archive
+          </h6>
+          <ul>
+            	<li><a href="https://ventureg.polymer.digital/2019/03/">March 2019</a>&nbsp;(1)</li>
+              <li><a href="https://ventureg.polymer.digital/2019/03/">March 2019</a>&nbsp;(1)</li>
+              <li><a href="https://ventureg.polymer.digital/2019/03/">March 2019</a>&nbsp;(1)</li>
+              <li><a href="https://ventureg.polymer.digital/2019/03/">March 2019</a>&nbsp;(1)</li>
+          </ul>
+        </div>
+      <div class="blog__nav-group blog__tags">
+        <h6 class="blog__nav-label">
+          Tags
+        </h6>
+        <a href="#" class="blog__tag">Tag 1</a>
+        <a href="#" class="blog__tag">Tag 1</a>
+        <a href="#" class="blog__tag">Tag 1</a>
+        <a href="#" class="blog__tag">Tag 1</a>
+        <a href="#" class="blog__tag">Tag 1</a>
+        <a href="#" class="blog__tag">Tag 1</a>
+      </div>
+      <div class="blog__nav-group blog__social">
+        <h6 class="blog__nav-label">
+          Social
+        </h6>
+        <a href="#" class="blog__social-item">
+          <img src="assets/resources/blog-twitter.svg">
+        </a>
+        <a href="#" class="blog__social-item">
+          <img src="assets/resources/blog-facebook.svg">
+        </a>
+        <a href="#" class="blog__social-item">
+          <img src="assets/resources/blog-instagram.svg">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include('../partials/footer.html')
