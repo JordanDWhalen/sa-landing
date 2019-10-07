@@ -37,7 +37,7 @@ gulp.task("styles", function() {
     .pipe(globbing({ extensions: ".scss" }))
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer({ cascade: false }))
-    .pipe(sourcemaps.write())
+
     .on("error", handleError)
     .pipe(gulp.dest("public/assets/styles"))
 });
@@ -60,7 +60,7 @@ gulp.task("js", function() {
     .pipe(sourcemaps.init())
     .on("error", handleError)
     .pipe(concat("application.js"))
-    .pipe(sourcemaps.write())
+
     .pipe(gulp.dest("public/assets/js"))
 });
 
