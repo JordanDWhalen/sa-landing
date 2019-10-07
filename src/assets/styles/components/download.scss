@@ -39,4 +39,14 @@
     }
 
   }
+
+  @include breakpoint( 900px ){
+    &__item{
+      width: 100%;
+
+      & + .download__item{
+        margin-top: 2rem;
+      }
+    }
+  }
 }
