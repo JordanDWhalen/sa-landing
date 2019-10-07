@@ -1,0 +1,23 @@
+.demo-cta{
+  background-color: $grey-mid;
+  padding-top: 5rem;
+
+  &__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content{
+    margin-left: 4.5rem;
+  }
+
+  h2, p{
+    color: $white;
+    text-align: left;
+  }
+
+  .button{
+    margin-top: 2rem;
+  }
+}

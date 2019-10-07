@@ -5,12 +5,14 @@
   width: 100%;
   background-color: $blue-light;
   transition: all ease .3s;
+  z-index: 100;
 
   &__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     border-bottom: 2px solid $white;
   }
 
@@ -33,6 +35,26 @@
       color: $white;
       font-size: 20px;
       margin-left: 15px;
+      transition: .25s all ease;
+
+      &:hover{
+        color: $blue;
+      }
+    }
+  }
+
+  @include breakpoint( 900px ){
+    &__container{
+      flex-direction: column;
+      padding-top: 1rem;
+    }
+
+    &__logo{
+      margin: 0 0 1.5rem;
+    }
+
+    &__nav-item:first-of-type{
+      margin-left: 0;
     }
   }
 

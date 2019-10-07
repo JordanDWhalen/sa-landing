@@ -1,5 +1,5 @@
 .footer-global{
-  background-color: $navy;
+  background-color: $black;
 
   &__container{
     display: flex;
@@ -25,6 +25,11 @@
       color: $white;
       font-size: 20px;
       margin-left: 15px;
+      transition: .25s all ease;
+
+      &:hover{
+        color: $blue;
+      }
     }
   }
 }

@@ -1,9 +1,11 @@
 .hero{
   background-color: $blue-light;
   color: $white;
+  margin-top: 8.2rem;
 
   &__container{
-    padding: 18rem 0 22rem;
+    padding-top: 18rem;
+    padding-bottom: 22rem;
     background-image: url('../resources/hero-illustration.svg');
     background-position: center right;
     background-repeat: no-repeat;
@@ -16,6 +18,7 @@
 
   &__actions{
     margin-top: 40px;
+    display: flex;
 
     a + a{
       margin-left: 20px;
@@ -29,5 +32,25 @@
   p{
     font-size: 20px;
     line-height: 34px;
+  }
+
+  @include breakpoint( 900px ){
+    margin-top: 12rem;
+
+    &__content{
+      position: relative;
+      z-index: 2;
+    }
+
+    &__container{
+      background-size: contain;
+      background-position: center 2rem;
+      position: relative;
+      padding-top: 36rem;
+      padding-bottom: 10rem;
+    }
+    h1, p{
+      color: $white;
+    }
   }
 }

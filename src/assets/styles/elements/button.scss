@@ -5,18 +5,69 @@
   text-transform: capitalize;
   color: $white;
   border-radius: 10rem;
+  transition: .25s all ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.0);
+
 
   &--primary{
-    // background-color: $blue;
-    background-image: linear-gradient(180deg, #6666FF 0%, #2B2BD9 100%);
+    position: relative;
+    background-color: transparent;
+    z-index: 2;
+    overflow: hidden;
+    transition: .25s all ease;
+
+    &:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: $blue;
+      z-index: -1;
+      transition: .25s all ease;
+    }
+
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(180deg, #6666FF 0%, #2B2BD9 100%);
+      z-index: -2;
+      transition: .25s all ease;
+      opacity: 0;
+    }
+
+    &:hover{
+
+      &:before{
+        opacity: 1;
+      }
+
+      &:after{
+        opacity: 0;
+      }
+    }
   }
 
   &--secondary{
     border: 2px solid $white;
+
+    &:hover{
+      background-color: $white;
+      color: $grey-dark;
+    }
   }
 
   &--dark{
     color: $grey-dark;
     border-color: $grey-dark;
+  }
+
+  &:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.125);
   }
 }

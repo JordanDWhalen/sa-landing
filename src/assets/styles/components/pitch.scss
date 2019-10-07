@@ -6,6 +6,11 @@
     text-align: center;
     max-width: 625px;
     margin: 0 auto 75px;
+
+    h2{
+      margin-bottom: 2rem;
+    }
+
   }
 
   &__item{
@@ -30,6 +35,7 @@
 
   &__actions{
     margin-top: 2rem;
+    display: flex;
 
     a + a{
       margin-left: 1rem;
@@ -59,4 +65,14 @@
     }
   }
 
+  @include breakpoint( 900px ){
+    &__item{
+      flex-direction: column;
+
+      img{
+        margin: 0 0 2rem;
+        width: 100%;
+      }
+    }
+  }
 }

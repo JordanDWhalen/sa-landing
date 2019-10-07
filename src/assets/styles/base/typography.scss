@@ -11,18 +11,28 @@ h1{
   line-height: 62px;
   font-weight: 500;
   text-transform: capitalize;
+  @include breakpoint( 900px ){
+    font-size: 42px;
+    line-height: 52px;
+  }
 }
 
 h2{
   font-size: 32px;
   letter-spacing: 0;
   text-align: center;
+  @include breakpoint( 900px ){
+    font-size: 28px;
+  }
 }
 
 h3{
   font-size: 24px;
   color: #232133;
   letter-spacing: 0;
+  @include breakpoint( 900px ){
+    font-size: 20px;
+  }
 }
 
 p{
