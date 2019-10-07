@@ -40,7 +40,6 @@ gulp.task("styles", function() {
     .pipe(sourcemaps.write())
     .on("error", handleError)
     .pipe(gulp.dest("public/assets/styles"))
-    .pipe(gulp.dest("wp-content/themes/venture-g/assets/styles"));
 });
 
 gulp.task("vendor-js", function() {
@@ -53,7 +52,6 @@ gulp.task("vendor-js", function() {
     .pipe(uglify())
     .on("error", handleError)
     .pipe(gulp.dest("public/assets/js"))
-    .pipe(gulp.dest("wp-content/themes/venture-g/assets/js"));
 });
 
 gulp.task("js", function() {
@@ -64,7 +62,6 @@ gulp.task("js", function() {
     .pipe(concat("application.js"))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest("public/assets/js"))
-    .pipe(gulp.dest("wp-content/themes/venture-g/assets/js"));
 });
 
 gulp.task("resources", function() {
@@ -82,7 +79,6 @@ gulp.task("resources", function() {
     )
     .on("error", handleError)
     .pipe(gulp.dest("public/assets/resources"))
-    .pipe(gulp.dest("wp-content/themes/venture-g/assets/resources"));
 });
 
 gulp.task("resources-files", function() {
@@ -95,7 +91,6 @@ gulp.task("resources-files", function() {
     .pipe(newer("public/assets/resources"))
     .on("error", handleError)
     .pipe(gulp.dest("public/assets/resources"))
-    .pipe(gulp.dest("wp-content/themes/venture-g/assets/resources"));
 });
 
 gulp.task("markup", function() {

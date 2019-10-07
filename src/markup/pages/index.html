@@ -1,69 +1,116 @@
-@@include('../partials/header-none.html')
+@@include('../partials/header.html')
 <main id="main">
-  <section class="template-directory">
-    <div class="logo">
-      <img src="assets/resources/logo.svg">
-    </div> <!-- / .logo -->
-    <div class="template-directory__links">
-      <nav class="container">
-        <a href="t1.html" class="button button--white button--arrow">
-          <span class="button__label">
-            Homepage
-          </span>
-          <span class="button__arrow">
-            &rarr;
-          </span>
-        </a>
-        <a href="t2.html" class="button button--white button--arrow">
-          <span class="button__label">
-            About
-          </span>
-          <span class="button__arrow">
-            &rarr;
-          </span>
-        </a>
-        <a href="t3.html" class="button button--white button--arrow">
-          <span class="button__label">
-            Portfolio
-          </span>
-          <span class="button__arrow">
-            &rarr;
-          </span>
-        </a>
-        <a href="t4.html" class="button button--white button--arrow">
-          <span class="button__label">
-            In The News
-          </span>
-          <span class="button__arrow">
-            &rarr;
-          </span>
-        </a>
-        <a href="t5.html" class="button button--white button--arrow">
-          <span class="button__label">
-            Blog
-          </span>
-          <span class="button__arrow">
-            &rarr;
-          </span>
-        </a>
-        <a href="t6.html" class="button button--white button--arrow">
-          <span class="button__label">
-            Contact
-          </span>
-          <span class="button__arrow">
-            &rarr;
-          </span>
-        </a>
-        <a href="t7.html" class="button button--white button--arrow">
-          <span class="button__label">
-            Basic Content
-          </span>
-          <span class="button__arrow">
-            &rarr;
-          </span>
-        </a>
-      </nav> <!-- / .container -->
-    </div> <!-- / __links -->
+
+  <section class="hero">
+    <div class="hero__container container">
+      <div class="hero__content">
+        <h1>The best way to integrate Stellar into your app</h1>
+        <p>StellarAuth increases user security and enables management of keys across applications, and across user actions with more grace and simplicity than any 2FA system out there.</p>
+      </div>
+      <div class="hero__actions">
+        <a href="#" class="button button--primary">Download</a>
+        <a href="#" class="button button--secondary">Read the Docs</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pitch">
+    <div class="pitch__container container">
+      <div class="pitch__intro">
+        <h2>Easily bake Stellar into your app, and help your users stay safer than ever before</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea fugiat, suscipit quo, tenetur neque animi? Mollitia recusandae, nihil similique qui dignissimos porro atque magnam! Amet deleniti soluta, dolorum commodi culpa.</p>
+      </div>
+      <article class="pitch__item">
+        <img src="assets/resources/pitch-illustration-1.svg">
+        <div class="pitch__item-content">
+          <h3>Building Stellar into your app can be difficult, and require major work.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore placeat, quia ut ad amet totam. Iste repellendus facere quidem! Quos excepturi commodi quidem, ad laborum. Ullam amet porro nemo sequi.</p>
+        </div>
+      </article>
+      <article class="pitch__item">
+        <img src="assets/resources/pitch-illustration-2.svg">
+        <div class="pitch__item-content">
+          <h3>Want to get the most out of Stellar? You may need to rewrite a lot of stuff. That, or you can use StellarAuth.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore placeat, quia ut ad amet totam. Iste repellendus facere quidem! Quos excepturi commodi quidem, ad laborum. Ullam amet porro nemo sequi.</p>
+        </div>
+      </article>
+      <article class="pitch__item">
+        <img src="assets/resources/pitch-illustration-3.svg">
+        <div class="pitch__item-content">
+          <h3>Without StellarAuth not only is your app going to continue missing out on all the goodness of Stellar, your users will also remain less secure.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore placeat, quia ut ad amet totam. Iste repellendus facere quidem! Quos excepturi commodi quidem, ad laborum. Ullam amet porro nemo sequi.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="pitch">
+    <div class="pitch__container container">
+      <div class="pitch__intro">
+        <h2>I get what StellarAuth does for me, but what does it do for my users?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea fugiat, suscipit quo, tenetur neque animi? Mollitia recusandae, nihil similique qui dignissimos porro atque magnam! Amet deleniti soluta, dolorum commodi culpa.</p>
+      </div>
+      <article class="pitch__item">
+        <img src="assets/resources/pitch-illustration-4.svg">
+        <div class="pitch__item-content">
+          <h3>StellarAuth turns any interaction a user can have within your app into a transaction on the Stellar Network</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore placeat, quia ut ad amet totam. Iste repellendus facere quidem! Quos excepturi commodi quidem, ad laborum. Ullam amet porro nemo sequi.</p>
+        </div>
+      </article>
+      <article class="pitch__item">
+        <img src="assets/resources/pitch-illustration-5.svg">
+        <div class="pitch__item-content">
+          <h3>What this means is that we were able to build a WAY more flexible UI than you’ve ever seen within a 2FA application</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore placeat, quia ut ad amet totam. Iste repellendus facere quidem! Quos excepturi commodi quidem, ad laborum. Ullam amet porro nemo sequi.</p>
+          <div class="pitch__actions">
+            <a href="#" class="button button--primary">See The Demo</a>
+          </div>
+        </div>
+      </article>
+      <article class="pitch__item">
+        <img src="assets/resources/pitch-illustration-6.svg">
+        <div class="pitch__item-content">
+          <h3>You can get up and running with StellarAuth in mere minutes. Thats right, we said minutes.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore placeat, quia ut ad amet totam. Iste repellendus facere quidem! Quos excepturi commodi quidem, ad laborum. Ullam amet porro nemo sequi.</p>
+          <div class="pitch__actions">
+            <a href="#" class="button button--primary">Get Started</a>
+            <a href="#" class="button button--secondary button--dark">See The Demo</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="pitch pitch--single">
+    <div class="pitch__container container">
+      <article class="pitch__item">
+        <img src="assets/resources/pitch-illustration-7.svg">
+        <div class="pitch__item-content">
+          <h3>And one of our favorite features? StellarAuth is Free for both you, and your users.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore placeat, quia ut ad amet totam. Iste repellendus facere quidem! Quos excepturi commodi quidem, ad laborum. Ullam amet porro nemo sequi.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta__container container">
+      <h2>Ready to Get Rolling with StellarAuth?</h2>
+
+      <div class="cta__item">
+        <h3>Download Our Apps</h3>
+        <img src="assets/resources/cta-ill-1.svg">
+        <a href="#" class="button button--primary button--full">Downloads</a>
+      </div>
+      <div class="cta__item">
+        <h3>Check Out The Demo</h3>
+        <img src="assets/resources/cta-ill-2.svg">
+        <a href="#" class="button button--primary button--full">View Demo</a>
+      </div>
+      <div class="cta__item">
+        <h3>Read The Docs</h3>
+        <img src="assets/resources/cta-ill-3.svg">
+        <a href="#" class="button button--primary button--full">Get Started With Our Docs</a>
+      </div>
+    </div>
   </section>
 </main>
-@@include('../partials/footer-none.html')
+@@include('../partials/footer.html')

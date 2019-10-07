@@ -1,80 +1,34 @@
 .header-global{
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-  top: 50px;
+  position: fixed;
+  top: 0;
   left: 0;
+  width: 100%;
 
-  .nav-global{
-    width: 40rem;
-    position: absolute;
-    top: -50px;
-    right: 0;
-    transform: translateX(40rem);
-    transition: .25s all ease;
-    background-color: rgba(0,0,0,0.4);
-    height: 100vh;
-    border-left: 1px solid rgba(255, 255, 255, 0.15);
+  &__container{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0 2px;
+    border-bottom: 2px solid $white;
+  }
+
+  &__logo{
+    font-size: 24px;
+    color: $white;
+    display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px);
-  }
-
-  &--active{
-    .nav-global{
-      transform: translateX(0);
+    img{
+      margin-right: 1rem;
     }
   }
 
-  @include breakpoint( 900px ){
-    top: 0;
-    padding: 1.2rem;
-    background-color: rgba(0,0,0,0.4);
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+  &__nav{
 
-    .nav-global{
-      height: calc(100vh - 62px);
-      top: 62px;
-      background-color: rgba(0,0,0,0.65);
+    &-item{
+      color: $white;
+      font-size: 20px;
+      margin-left: 15px;
     }
-
-    &__container{
-      padding: 0;
-    }
-
-    &--active{
-      background-color: rgba(0,0,0,0.65);
-
-      .nav-global{
-        // right: 0;
-      }
-    }
-
-    &--active + .hero .hero__content{
-      opacity: .35;
-    }
-  }
-
-  @include breakpoint( 620px ){
-    height: 62px;
-
-    .nav-global{
-      width: 100%;
-      right: -100%;
-    }
-
-    .nav-global__item{
-      text-align: center;
-    }
-
-    &--active{
-
-      .nav-global{
-        right: 0;
-      }
-    }
-
   }
 }

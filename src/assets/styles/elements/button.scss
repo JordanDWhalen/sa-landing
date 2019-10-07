@@ -1,0 +1,22 @@
+.button{
+  display: inline-block;
+  padding: 15px 32px;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: $white;
+  border-radius: 10rem;
+
+  &--primary{
+    // background-color: $blue;
+    background-image: linear-gradient(180deg, #6666FF 0%, #2B2BD9 100%);
+  }
+
+  &--secondary{
+    border: 2px solid $white;
+  }
+
+  &--dark{
+    color: $grey-dark;
+    border-color: $grey-dark;
+  }
+}

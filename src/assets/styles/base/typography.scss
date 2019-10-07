@@ -1,38 +1,32 @@
-h3, .h3{
-  font-family: $heading;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 22px;
-  line-height: 36px;
-  letter-spacing: 0.02em;
+p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+  font-family: $body;
 }
 
-
-.eyebrow{
+h1, h2, h3, h4, h5, h6{
   font-family: $heading;
-  font-style: normal;
-  font-weight: 900;
+}
+
+h1{
+  font-size: 52px;
+  line-height: 62px;
+  font-weight: 500;
   text-transform: capitalize;
-  font-size: 14px;
-  line-height: normal;
-  letter-spacing: 0.02em;
-  color: rgba(0, 0, 0, 0.5);
-  display: block;
+}
 
-  &::before{
-    content: "";
-    display: block;
-    width: 28px;
-    height: 1px;
-    background-color: $black;
-    margin-bottom: 3rem;
-  }
+h2{
+  font-size: 32px;
+  letter-spacing: 0;
+  text-align: center;
+}
 
-  &--white{
-    color: rgba(255, 255, 255, 0.5);
+h3{
+  font-size: 24px;
+  color: #232133;
+  letter-spacing: 0;
+}
 
-    &::before{
-      background-color: $white;
-    }
-  }
+p{
+  font-size: 16px;
+  line-height: 38px;
+  font-weight: 300;
 }

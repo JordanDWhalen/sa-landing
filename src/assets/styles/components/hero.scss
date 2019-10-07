@@ -1,222 +1,33 @@
-.hero {
-  position: relative;
-  min-height: 100vh;
-  height: auto;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero{
+  background-color: $blue-light;
+  color: $white;
 
-  &__title {
-    font-family: $heading;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 75px;
-    line-height: 1.3;
-    letter-spacing: 0.01em;
-    text-transform:capitalize;
-    margin: 35px 0 5px;
-    padding-bottom: 25px;
-  }
-
-  &__copy {
-    border-top: 1px solid white;
-    font-family: $body;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.9;
-    margin-bottom: 70px;
-    padding-top: 32px;
-    position: relative;
-
-    &:before{
-      content: "";
-      width: 100%;
-      height: 3px;
-      background-color: $white;
-      position: absolute;
-      top: -8px;
-      left: 0;
-    }
-  }
-
-  &__wrapper {
-    max-width: 620px;
-  }
-
-  &__content {
-    position: relative;
-    z-index: 2;
-    color: $white;
-    transition: .25s all ease;
-  }
-
-  &__slider {
-    position: relative;
-    z-index: 3;
-    height: 100vh;
-
-    &-item.slick-slide {
-      height: 100vh;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
-  &__image {
-    position: absolute;
-    z-index: 1;
-    @include content100;
+  &__container{
+    padding: 18rem 0 22rem;
+    background-image: url('../resources/hero-illustration.svg');
+    background-position: center right;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: auto;
+  }
 
-    &::after {
-      content: "";
-      @include content100;
-      z-index: 2;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        linear-gradient(
-          89.85deg,
-          rgba(0, 0, 0, 0.49) 2.2%,
-          rgba(0, 0, 0, 0) 5.04%
-        );
+  &__content{
+    max-width: 675px;
+  }
+
+  &__actions{
+    margin-top: 40px;
+
+    a + a{
+      margin-left: 20px;
     }
   }
 
-  &__slider-nav {
-    position: absolute;
-    bottom: 10rem;
-    width: 30rem;
-    left: calc(50% - 15rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-
-    li {
-      flex-grow: 1;
-      margin: 0 3px;
-
-      button {
-        padding: 0;
-        height: 2px;
-        width: 100%;
-        border: none;
-        text-indent: -9999px;
-        background-color: rgba(255, 255, 255, 0.56);
-        transition: 0.25s all ease;
-        outline: none;
-        cursor: pointer;
-
-        &:hover {
-          transform: scaleY(2);
-        }
-      }
-
-      &.slick-active button {
-        pointer-events: none;
-        background-color: $green;
-      }
-    }
+  h1{
+    margin-bottom: 20px;
   }
 
-  &--slider {
-    display: block;
+  p{
+    font-size: 20px;
+    line-height: 34px;
   }
-
-  &--fade {
-    &:after {
-      content: "";
-      @include content100;
-      z-index: 1;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        linear-gradient(
-          89.85deg,
-          rgba(0, 0, 0, 0.49) 12.2%,
-          rgba(0, 0, 0, 0) 65.04%
-        );
-    }
-  }
-
-  @include breakpoint( 960px ){
-    .hero__title{
-      font-size: 42px;
-      line-height: 1.35;
-    }
-  }
-
-  @include breakpoint( 720px ){
-    &--slider{
-      .hero__slider-item{
-        .hero__content{
-          z-index: 3;
-        }
-        &:after {
-          content: "";
-          @include content100;
-          z-index: 2;
-          background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            linear-gradient(
-              89.85deg,
-              rgba(0, 0, 0, 0.49) 12.2%,
-              rgba(0, 0, 0, 0) 65.04%
-            );
-        }
-      }
-    }
-    &__image{
-      background-position: 80% 50%;
-    }
-  }
-
-  @media screen and (max-height: 820px) and (min-width: 900px){
-    height: auto;
-
-    &__slider{
-      height: auto;
-      min-height: 100vh;
-    }
-    &__slider-item.slick-slide{
-      height: auto;
-      min-height: 100vh;
-    }
-    &__slider-nav{
-      bottom: 2rem;
-    }
-
-    &__content{
-      padding: 10rem 2rem 5rem;
-    }
-  }
-
-  @media screen and (max-height: 820px) and (max-width: 900px){
-    height: auto;
-
-    &__slider{
-      height: auto;
-      min-height: 100vh;
-    }
-    &__slider-item.slick-slide{
-      height: auto;
-      min-height: 100vh;
-    }
-    &__slider-nav{
-      bottom: 2rem;
-    }
-
-    &__content{
-      padding: 7rem 2rem;
-    }
-
-
-  }
-}
-
-.post-hero {
-  background: #333;
 }

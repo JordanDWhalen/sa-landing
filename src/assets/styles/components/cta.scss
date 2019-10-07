@@ -1,0 +1,44 @@
+.cta{
+  background-color: $blue-dark;
+  padding: 10rem 0 5rem;
+
+  h2{
+    color: $white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+
+  &__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item{
+    width: 30%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: $white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    position: relative;
+    padding-bottom: 10rem;
+    padding-top: 2rem;
+
+    img{
+      margin-top: 3rem;
+    }
+
+    .button{
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      border-radius: 0;
+      margin: 2rem 0 0;
+    }
+  }
+}
