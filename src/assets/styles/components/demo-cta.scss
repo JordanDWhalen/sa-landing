@@ -20,4 +20,24 @@
   .button{
     margin-top: 2rem;
   }
+
+  @include breakpoint( 900px ){
+
+    &__content{
+      text-align: center;
+      margin: 0;
+
+      h2, p{
+        text-align: center;
+      }
+    }
+    &__container{
+      flex-direction: column;
+      flex-flow: column-reverse;
+
+      img{
+        margin-top: 2rem;
+      }
+    }
+  }
 }
