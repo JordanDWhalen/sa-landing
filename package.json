@@ -11,7 +11,8 @@
     "build": "gulp build",
     "dev": "gulp",
     "sync": "gulp sync",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "now": "yarn build && now --prod"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",
