@@ -39,6 +39,6 @@
     "gulp-twig": "^0.7.0",
     "gulp-uglify": "*",
     "gulp-util": "^3.0.7",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.19"
   }
 }
